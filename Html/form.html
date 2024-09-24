@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      .outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #fff;
+      }
+
+      .container {
+        width: fit-content;
+        inset: 0;
+        z-index: 50;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 8px rgba(40, 204, 18, 0.1),
+          0 6px 20px rgba(194, 14, 14, 0.15);
+      }
+
+      .radio {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .selectbox {
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: none;
+        background: #fff;
+        width: 200px;
+        color: gray;
+        margin: 10px 0px;
+        outline: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .select {
+        display: flex;
+        gap: 10px;
+      }
+
+      .textbox {
+        padding: 8px 16px;
+        border: none;
+        background: #fff;
+        border-radius: 5px;
+        outline: none;
+        color: gray;
+        width: 300px;
+        margin: 10px 0px;
+        font-size: medium;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        background-color: green;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px rgba(66, 12, 165, 0.1),
+          0 6px 20px rgba(192, 18, 18, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="container">
+        <h2>Html Forms</h2>
+        <form action="https://www.diracetechnology.com" target="_blank">
+          <label for="fname">First Name </label><br />
+          <input
+            class="textbox"
+            type="text"
+            id="fname"
+            name="fname"
+            value=""
+            placeholder="Enter your first name"
+          /><br />
+          <label for="lname">Last Name</label><br />
+          <input
+            class="textbox"
+            type="text"
+            id="lnmame"
+            name="lname"
+            value=""
+            placeholder="Enter your last name"
+          /><br />
+          <div class="select">
+            <div>
+              <label for="country">Select Your Country</label><br />
+              <select class="selectbox" id="country" name="country">
+                <option value="" selected disabled>Select your country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+              </select>
+            </div>
+            <div>
+              <label for="gender">Select Your Gender</label><br />
+              <select class="selectbox" id="gender" name="gender">
+                <option value="" selected disabled>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="radio">
+            <div>
+              <input type="radio" name="fav_language" id="html" value="Html" />
+              <label for="html">Html</label><br />
+              <input type="radio" name="fav_language" id="css" value="CSS" />
+              <label for="css">CSS</label><br />
+              <input
+                type="radio"
+                name="fav_language"
+                id="javascript"
+                value="Javascript"
+              />
+              <label for="javascript">Javascript</label><br />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="vehicle1"
+                id="vehicle1"
+                value="Bike"
+              />
+              <label for="vehicle1">Bike</label><br />
+              <input
+                type="checkbox"
+                name="vehicle2"
+                id="vehicle2"
+                value="Car"
+              />
+              <label for="vehicle2">Car</label><br />
+              <input
+                type="checkbox"
+                name="vehicle3"
+                id="vehicle3"
+                value="Boat"
+              />
+              <label for="vehicle3">Boat</label><br />
+            </div>
+          </div>
+          <input class="btn" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

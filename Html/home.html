@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      /* Custom styling for each section */
+      .section-header {
+        text-align: center;
+        margin: 30px 0;
+        font-weight: bold;
+        font-size: 24px;
+        color: #333;
+      }
+
+      /* Search Bar */
+      .search-bar {
+        margin-bottom: 40px;
+      }
+
+      /* Card Styling */
+      .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Hover effect for cards */
+      .card:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- Search Bar -->
+      <div class="row justify-content-center search-bar">
+        <div class="col-md-8">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search for products, vouchers, sales..."
+              aria-label="Search"
+            />
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Products Section -->
+      <h2 class="section-header">Products</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">
+                A brief description of the product goes here. Price: $99
+              </p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">
+                A brief description of the product goes here. Price: $79
+              </p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">
+                A brief description of the product goes here. Price: $59
+              </p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sales Section -->
+      <h2 class="section-header">Sales</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Sale 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">50% off on Electronics</h5>
+              <p class="card-text">
+                Grab the latest gadgets at half the price!
+              </p>
+              <a href="#" class="btn btn-danger">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Sale 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">30% off on Fashion</h5>
+              <p class="card-text">Update your wardrobe with trendy outfits.</p>
+              <a href="#" class="btn btn-danger">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Sale 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">20% off on Furniture</h5>
+              <p class="card-text">
+                Decorate your home with stylish furniture.
+              </p>
+              <a href="#" class="btn btn-danger">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vouchers Section -->
+      <h2 class="section-header">Vouchers</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Voucher 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Voucher $10 Off</h5>
+              <p class="card-text">
+                Use this voucher for an additional $10 off on orders over $100.
+              </p>
+              <a href="#" class="btn btn-success">Get Voucher</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Voucher 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Voucher 15% Off</h5>
+              <p class="card-text">
+                Save 15% on your first order with this voucher.
+              </p>
+              <a href="#" class="btn btn-success">Get Voucher</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../assets/poe-mamhe-thar-7.jpg"
+              class="card-img-top"
+              alt="Voucher 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Voucher Free Shipping</h5>
+              <p class="card-text">
+                Enjoy free shipping on orders over $50 with this voucher.
+              </p>
+              <a href="#" class="btn btn-success">Get Voucher</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: whitesmoke;
+        font-family: Arial, sans-serif;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: url(../assets/736461.png);
+        background-size: cover;
+      }
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 50px;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      .container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;   
+        gap: 16px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+      .form-group label {
+        margin-bottom: 8px;
+        font-size: medium;
+      }
+      .form-group input {
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        outline: none;
+        color: gray;
+        font-size: medium;
+      }
+
+      a {
+        color: blue;
+      }
+
+      .checkbox {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      button {
+        padding: 8px 16px;
+        width: 100px;
+        background: green;
+        border-radius: 10px;
+        border: none;
+        font-size: medium;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>Register Form</h1>
+        <form action="">
+          <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Enter Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="comfirmpassword">Comfrim Password:</label>
+            <input
+              type="password"
+              id="comfirmpassword"
+              name="comfirmpassword"
+              placeholder="Comfrim your password"
+              required
+            />
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="" id="agree" />
+            <label for="agree"
+              >I'd agree <a href="">UserTerms </a> and
+              <a href="">Policy</a></label
+            >
+          </div>
+          <button>Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .container1 div {
+        background-color: yellowgreen;
+        padding: 8px 16px;
+        border-radius: 20px;
+        margin: auto;
+        width: 500px;
+      }
+
+      .container2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .container2 div {
+        background-color: yellowgreen;
+        padding: 8px 16px;
+        border-radius: 20px;
+        margin: auto;
+        width: 450px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+          0 6px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      #leftbox {
+        float: left;
+        background: red;
+        width: 25%;
+        height: 300px;
+      }
+
+      #middlebox {
+        float: left;
+        background: green;
+        width: 50%;
+        height: 300px;
+      }
+
+      #rightbox {
+        float: right;
+        background: blue;
+        width: 25%;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div>
+        <h1>London</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+      <div>
+        <h1>London</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+      <div>
+        <h1>London</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    <div class="container2">
+      <div>
+        <h1>London</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+      <div>
+        <h1>London</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+      <div>
+        <h1>London</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    <div id="leftbox">
+      <h2>Learn:</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente
+      blanditiis sunt amet commodi voluptatem voluptates vitae nulla quam rem.
+      Illum adipisci quo deserunt velit laudantium modi illo dolores vero?
+      Tenetur culpa quo quasi minus recusandae incidunt ad nihil ducimus eius
+      porro nisi libero, obcaecati explicabo, delectus sed inventore quos
+      necessitatibus esse harum. Illo repellendus quod earum laborum! Omnis,
+      optio?
+    </div>
+    <div id="middlebox">
+      <h2>Second:</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit
+      suscipit earum aliquid facilis. Ullam obcaecati placeat qui alias, quasi
+      neque, blanditiis velit autem iste rerum temporibus. Fugit, similique
+      esse! Labore consequuntur sunt laboriosam nisi suscipit, ducimus natus
+      dolorem provident sed! Atque sint totam ut sunt veniam deleniti fuga
+      similique? Vero pariatur incidunt, ipsum molestias perspiciatis impedit
+      quam voluptatibus odit?
+    </div>
+    <div id="rightbox">
+      <h2>Third:</h2>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eius
+      rerum sapiente earum quidem nesciunt natus architecto, placeat dolor
+      dolorum laborum praesentium vero. Iste, placeat cum impedit doloremque
+      deleniti totam. Nam illum exercitationem eius tempore, incidunt quasi id
+      itaque, quo soluta doloribus hic sunt reprehenderit? Officia
+      necessitatibus asperiores hic quibusdam iste molestias nisi illo
+      consequuntur vitae! Molestiae ducimus magnam cumque.
+    </div>
+    <br />
+    <video
+      id="vedio1"
+      width="420"
+      poster="../assets/poe-mamhe-thar-7.jpg"
+      src="../assets/videoplayback.mp4"
+    ></video>
+    <br />
+    <button onclick="playPaused()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+
+    <hr />
+    <video
+      height="200"
+      controls
+      poster="../assets/poe-mamhe-thar-7.jpg"
+      src="../assets/videoplayback.mp4"
+    ></video>
+    <hr />
+    <audio src="../assets/to_the_bone.mp3" controls></audio>
+    <hr />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/5zgie24lLtw?si=ifRHilnjazSxmVSu"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <hr />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.5130566061675!2d96.12637871045027!3d16.85049618388103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194eb93841c29%3A0x7fca39a6c09ca69e!2sDIR-ACE%20Technology%20Ltd.!5e0!3m2!1sen!2smm!4v1726288827362!5m2!1sen!2smm"
+      width="450"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <hr />
+    <iframe
+      src="./form.html"
+      height="500px"
+      width="300px"
+      frameborder="0"
+    ></iframe>
+    <hr />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/ndAh1H3hQL4?si=ZlU-Saofjif9cvMi"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      form {
+        padding: 20px 30px;
+        width: 50%;
+        background-color: aquamarine;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 12px rgba(153, 79, 79, 0.2),
+          0 1px 3px rgba(0, 0, 0, 0.12);
+      }
+      input {
+        width: full;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: box-shadow 0.3s ease;
+        font-size: medium;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12);
+      }
+      input:focus {
+        outline: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12);
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: medium;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: #333;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      select:focus {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12);
+        outline: none;
+      }
+
+      select option {
+        padding: 10px;
+        font-size: medium;
+      }
+      button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: rgb(45, 194, 45);
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px;
+        color: white;
+        font-size: medium;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px lightblue, 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+      }
+
+      button:hover {
+        background-color: rgb(39, 174, 39);
+        transform: scale(1.02);
+      }
+      .gender {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        /* justify-content: space-around; */
+        gap: 10px;
+      }
+      section {
+        display: flex;
+        gap: 20px;
+      }
+
+      .checkbox {
+        display: flex;
+        flex-direction: row;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using CSS style an HTML Form</h2>
+    <form action="">
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your name..." />
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Your last name..."
+        />
+      </div>
+      <div>
+        <label for="">Country</label>
+        <select name="Country" id="Country">
+          <option value="" selected disabled>Select</option>
+          <option value="au">Austalia</option>
+          <option value="ca">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+      <div class="gender">
+        <lable>Select Gender</lable>
+        <section>
+          <label for="male">
+            <input type="radio" name="gender" id="male" value="male" />
+            Male
+          </label>
+          <label for="female">
+            <input type="radio" name="gender" id="female" value="female" />
+            Female
+          </label>
+          <label for="other">
+            <input type="radio" name="gender" id="other" value="other" />
+            Other
+          </label>
+        </section>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="check" />
+        <label for="check"
+          >I accept
+          <a
+            target="_blank"
+            href="https://policies.google.com/terms?hl=en-US   "
+            >User Terms</a
+          >
+          and
+          <a href="https://policies.google.com/privacy?hl=en-US" target="_blank"
+            >Privacy Policy</a
+          >.</label
+        >
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

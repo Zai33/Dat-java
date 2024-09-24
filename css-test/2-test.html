@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("../assets/poe-mamhe-thar-7.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 0px;
+        background-attachment: fixed;
+      }
+
+      h1 {
+        background-color: lightcyan;
+        text-align: left;
+      }
+
+      .doted {
+        border-style: dotted;
+        background-color: blueviolet;
+        text-align: right;
+      }
+
+      .soldi {
+        border-style: ridge;
+        text-align: center;
+      }
+
+      .groove {
+        border-style: groove;
+      }
+
+      .other {
+        border-style: dashed dotted solid double;
+      }
+
+      /* div {
+        background-color: lightgray;
+        width: 300px;
+        border: 10px solid green;
+        padding: 50px;
+        margin: 20px;
+      } */
+
+      .container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 400px;
+        height: fit-content;
+        padding: 10px;
+        background: gray;
+        border-radius: 15px;
+      }
+      .container img {
+        border-radius: 5px;
+      }
+
+      .container1 {
+        text-indent: 50px;
+        border: 5px solid green;
+        background: white;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      h2 {
+        text-decoration: overline;
+        text-decoration-color: red;
+      }
+
+      h3 {
+        text-decoration: underline;
+        text-decoration-color: blue;
+      }
+
+      h4 {
+        text-decoration: line-through;
+        text-decoration-color: green;
+      }
+
+      h5 {
+        text-decoration: overline underline;
+        text-decoration-color: rgb(184, 12, 184);
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .lowercase {
+        text-transform: lowercase;
+      }
+
+      .capitalize {
+        text-transform: capitalize;
+      }
+
+      a:active {
+        color: red;
+      }
+
+      a:visited {
+        color: blue;
+      }
+      a:hover {
+        color: blueviolet;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background: green;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <p class="doted">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima
+      provident porro voluptates quisquam voluptatum quasi!
+    </p>
+    <p class="soldi">
+      <strong>Tips:</strong>Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+    <p class="groove">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    20
+    <p class="other">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem et
+      eveniet laudantium, eum eligendi obcaecati asperiores ipsam quidem dolorum
+      cupiditate dolore magnam ea facere. Laborum voluptates vel hic maiores.
+    </div>
+    <div class="container">
+      <img src="../assets/poe-mamhe-thar-7.jpg" width="400" height="" alt="" />
+      <div class="container1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure natus
+        ut quo, placeat dolor tempore unde sed nam hic!
+      </div>
+    </div>
+    <h2 class="uppercase">Lorem, ipsum dolor.</h2>
+    <h3 class="lowercase">Lorem ipsum dolor sit.</h3>
+    <h4 class="capitalize">Lorem ipsum dolor sit amet.</h4>
+    <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+
+    <p style="line-height: 1.7; font-family: Arial, Helvetica, sans-serif">
+      <img
+        src="../assets/poe-mamhe-thar-7.jpg"
+        style="float: right"
+        width="150px"
+        alt=""
+      />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At, repellendus
+      porro? Accusamus architecto magni sapiente nemo omnis voluptate, deleniti
+      voluptates cumque dicta incidunt beatae tempora, praesentium quia a
+      aspernatur? Dicta! Maiores cupiditate, animi pariatur magnam perferendis
+      inventore facilis quo praesentium provident eos asperiores accusamus
+      consequuntur dicta corrupti quam aliquid architecto quia id cum esse.
+      Numquam nulla voluptatibus vitae magnam sed. Temporibus autem ducimus
+      neque atque omnis totam ea rem! Consequuntur aperiam illum nulla voluptas
+      repellendus? Doloribus facere libero, nulla esse sequi ut iusto omnis, eos
+      tenetur et sit obcaecati ducimus.
+    </p>
+    <h1
+      style="letter-spacing: 5px; font-family: 'Times New Roman', Times, serif"
+    >
+      Hello World
+    </h1>
+    <p>
+      <b><a href="../dark/index.html">Go to </a></b>
+    </p>
+
+    <button type="button" onclick="window.location.href='../dark/index.html'">
+      Gogo
+    </button>
+  </body>
+</html>
